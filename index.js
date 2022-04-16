@@ -1,29 +1,19 @@
-    function positions (firstPlace, secondPlace, lastPlace){
+function positions (firstPlace, secondPlace, lastPlace){
 
-     athletes = ['Rafael', 'Manoel','Daniel'];
+    let athletes = [firstPlace, secondPlace, lastPlace];
     
-    if(athletes[2] = lastPlace ){
+   if(athletes[2] == "Daniel" ){
 
-        return `1ª - Colocado Rafael\n2ª - Colocado Daniel\n3º - Colocado Manoel`
+       return `1ª - Colocado Manoel\n2ª - Colocado ${athletes[2]}\n3º - Colocado Rafael`
 
-    }else if(athletes[2] = secondPlace) {
+   }else if(athletes[1] == "Daniel") {
 
-        return `1ª - Colocado Daniel\n2ª - Colocado Rafael\n3º - Colocado Manoel`
+       return `1ª - Colocado ${athletes[1]}\n2ª - Colocado Rafael\n3º - Colocado Manoel`
 
-    }else if(athletes[2] = firstPlace){
+   }
+       return `1ª - Colocado ${athletes[0]}\n2º - Colocado Manoel\n3ª - Colocado Rafael`
 
-        return `1ª - Colocado Daniel\n2º - Colocado Manoel\n3ª - Colocado Rafael`
-
-    }else{
-
-        return `Coloque novamente os atletas`
-
-    }
-}
-console.log(positions(2,1,0))    // Definidos os valores de cada atleta é só colocar o número
-//console.log(positions(1,2,0)) 
-//console.log(positions(0,1,2)) 
-
-//Assumidos os valores de Daniel = [2] Obs: posição 2, definida na linha 3 do VSC.
-//Assumidos os valores de Manoel = [1] Obs: posição 1, definida na linha 3 do VSC. 
-//Assumidos os valores de Rafael = [0] Obs: posição 0, definida na linha 3 do VSC. 
+   }
+   //console.log(positions("Rafael","Daniel","Manoel"));
+   //console.log(positions("Daniel","Manoel","Rafael"));
+   //console.log(positions("Manoel","Rafael","Daniel"));
