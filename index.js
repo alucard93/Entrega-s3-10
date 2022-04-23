@@ -10,7 +10,7 @@ function positions (firstPlace, secondPlace, lastPlace){
 
        return `1ª - Colocado ${athletes[1]}\n2ª - Colocado Rafael\n3º - Colocado Manoel`
 
-   }
+   }else
        return `1ª - Colocado ${athletes[0]}\n2º - Colocado Manoel\n3ª - Colocado Rafael`
 
    }
